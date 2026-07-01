@@ -8,7 +8,10 @@ Generate strong, secure passwords with cryptographic randomness — entirely in 
   <img src="https://img.shields.io/badge/react-19-%2361DAFB?logo=react" alt="React">
   <img src="https://img.shields.io/badge/ci-passing-brightgreen?logo=githubactions" alt="CI">
   <img src="https://img.shields.io/badge/image-~13MB_compressed-blue?logo=docker" alt="Size">
+  <img src="https://img.shields.io/badge/AI_created-DeepSeek_V4_Pro_%2B_OpenSpec-8b5cf6" alt="AI">
 </p>
+
+> Built by **DeepSeek V4 Pro** using the [OpenSpec](https://github.com/Fission-AI/OpenSpec) artifact-driven workflow — proposal → specs → design → tasks → implementation.
 
 ## Features
 
