@@ -1,0 +1,141 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.groupLabel {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.toggleRow {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.switchRoot {
+  width: 44px;
+  height: 24px;
+  background: var(--color-border);
+  border-radius: 9999px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 150ms;
+  flex-shrink: 0;
+}
+
+.switchRoot[data-state="checked"] {
+  background: var(--color-accent);
+}
+
+.switchRoot:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-accent) / 40%;
+}
+
+.switchThumb {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 150ms;
+  transform: translateX(3px);
+}
+
+.switchThumb[data-state="checked"] {
+  transform: translateX(23px);
+}
+
+.switchLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  user-select: none;
+}
+
+.charHint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.shortcuts {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.shortcutButton {
+  flex: 1;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  text-align: center;
+  transition: color 150ms, border-color 150ms, background 150ms;
+}
+
+.shortcutButton:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.shortcutActive {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent) / 10%;
+}
+
+.shortcutInput {
+  flex: 1;
+  min-width: 0;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-align: center;
+  transition: border-color 150ms;
+}
+
+.shortcutInput:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  color: var(--color-text-primary);
+}
+
+.shortcutInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.exclusionRow {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.exclusionItem {
+  flex: 1;
+  min-width: 200px;
+}
