@@ -1,0 +1,11 @@
+:80 {
+	root * /srv
+	file_server {
+		index index.html
+	}
+	encode gzip
+	header Cache-Control "public, max-age=31536000, immutable"
+	header /_next/static/* Cache-Control "public, max-age=31536000, immutable"
+
+	rewrite /terms /terms.html
+}
